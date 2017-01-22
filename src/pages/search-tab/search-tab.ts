@@ -16,7 +16,6 @@ export class SearchTabPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SearchTabPage');
   }
 
 }

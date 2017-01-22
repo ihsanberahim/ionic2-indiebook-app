@@ -1,15 +1,18 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { App } from './app.component';
+import { Ionic2RatingModule, Ionic2Rating } from 'ionic2-rating';
 
-import { HomePage } from '../pages/home/home';
+import { App } from './app.component';
 
 import { BookComponent } from '../components/book/book';
 
+import { HomePage } from '../pages/home/home';
 import { HomeTabPage } from '../pages/home-tab/home-tab';
 import { LikesTabPage } from '../pages/likes-tab/likes-tab';
 import { MyBooksTabPage } from '../pages/my-books-tab/my-books-tab';
 import { SearchTabPage } from '../pages/search-tab/search-tab';
+
+import { BookDetailsPage } from '../pages/book-details/book-details';
 
 @NgModule({
   declarations: [
@@ -19,10 +22,12 @@ import { SearchTabPage } from '../pages/search-tab/search-tab';
     LikesTabPage,
     MyBooksTabPage,
     SearchTabPage,
+    BookDetailsPage,
     BookComponent
   ],
   imports: [
-    IonicModule.forRoot(App)
+    IonicModule.forRoot(App),
+    Ionic2RatingModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -32,7 +37,9 @@ import { SearchTabPage } from '../pages/search-tab/search-tab';
     LikesTabPage,
     MyBooksTabPage,
     SearchTabPage,
-    BookComponent
+    BookDetailsPage,
+    BookComponent,
+    Ionic2Rating
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

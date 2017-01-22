@@ -1,0 +1,56 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Book Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-row class="basic-info">
+    <ion-col width-33>
+      <img src="assets/image/splash.png" alt="" class="book-cover">
+    </ion-col>
+    <ion-col width-67>
+      <ion-row>
+        <ion-col>
+          <strong>by Author Name</strong>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <rating [(ngModel)]="rate"></rating>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <small>Publisher: Publisher Name<br/>
+          Rated: 64k
+          </small>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col width-50 center>
+          <button ion-button block medium>BUY NOW</button>
+        </ion-col>
+        <ion-col center offset-10 width-20>
+          <button ion-button icon-left clear small>
+            <ion-icon name="heart-outline"></ion-icon>
+            <div></div>
+          </button>
+        </ion-col>
+        <ion-col center width-20>
+          <button ion-button icon-left clear small>
+            <ion-icon name="add"></ion-icon>
+            <div></div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <ion-row class="synopsis">
+    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.
+    </p>
+  </ion-row>
+</ion-content>

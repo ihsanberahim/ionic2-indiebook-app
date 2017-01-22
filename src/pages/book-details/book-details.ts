@@ -2,16 +2,18 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 /*
-  Generated class for the LikesTab page.
+  Generated class for the BookDetails page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-likes-tab',
-  templateUrl: 'likes-tab.html'
+  selector: 'page-book-details',
+  templateUrl: 'book-details.html'
 })
-export class LikesTabPage {
+export class BookDetailsPage {
+
+  private rate = 2.5;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 

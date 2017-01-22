@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { App } from 'ionic-angular';
+
+import { BookDetailsPage } from '../../pages/book-details/book-details';
 
 @Component({
   selector: 'book',
@@ -6,7 +9,11 @@ import { Component } from '@angular/core';
 })
 export class BookComponent {
 
-  constructor() {
+  constructor(public appCtrl: App) {
     
+  }
+
+  openBook() {
+    this.appCtrl.getRootNav().push(BookDetailsPage);
   }
 }
