@@ -1,14 +1,90 @@
 <ion-menu [content]="approot" id="menu-customer">
   <ion-content>
     <ion-list>
-      <ion-item menuClose (click)="openPublisherPage()">Open Publisher</ion-item>
+      <ion-item class="publisher-avatar">
+        <ion-avatar item-right>
+          <img src="assets/image/ionic.png">
+        </ion-avatar>
+        <h2>Cher</h2>
+        <p>Ugh. As if.</p>
+      </ion-item>
+      <ion-list-header>Help & Settings
+      </ion-list-header>
+      <ion-item menuClose>
+        <ion-icon name="help" item-left></ion-icon>
+        Help Center
+      </ion-item>
+      <ion-item menuClose>
+        <ion-icon name="lock" item-left></ion-icon>
+        Privacy Shortcuts
+      </ion-item>
+      <ion-item menuClose>
+        <ion-icon name="document" item-left></ion-icon>
+        Terms & Policies
+      </ion-item>
+      <ion-item menuClose>
+        <ion-icon name="bug" item-left></ion-icon>
+        Report a problem
+      </ion-item>
+      <ion-item menuClose>
+        <ion-icon name="information" item-left></ion-icon>
+        About
+      </ion-item>
+      <ion-item menuClose (click)="openPublisherPage()">
+        <ion-icon name="open" item-left></ion-icon>
+        Open Publisher
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
 <ion-menu [content]="approot" id="menu-publisher">
   <ion-content>
     <ion-list>
-      <ion-item menuClose (click)="openCustomerPage()">Back As Customer</ion-item>
+      <ion-item class="publisher-avatar">
+        <ion-avatar item-right>
+          <img src="assets/image/ionic.png">
+        </ion-avatar>
+        <h2>Cher</h2>
+        <p>Ugh. As if.</p>
+      </ion-item>
+      <ion-item menuClose>
+        <ion-icon name="stats" item-left></ion-icon>
+        Sales
+      </ion-item>
+      <ion-item menuClose>
+        <ion-icon name="cloud" item-left></ion-icon>
+        Uploaded Books
+      </ion-item>
+      <ion-item menuClose>
+        <ion-icon name="cloud-upload" item-left></ion-icon>
+        Publish A Book
+      </ion-item>
+      <ion-list-header>Help & Settings
+      </ion-list-header>
+      <ion-item menuClose>
+        <ion-icon name="help" item-left></ion-icon>
+        Help Center
+      </ion-item>
+      <ion-item menuClose>
+        <ion-icon name="lock" item-left></ion-icon>
+        Privacy Shortcuts
+      </ion-item>
+      <ion-item menuClose>
+        <ion-icon name="document" item-left></ion-icon>
+        Terms & Policies
+      </ion-item>
+      <ion-item menuClose>
+        <ion-icon name="bug" item-left></ion-icon>
+        Report a problem
+      </ion-item>
+      <ion-item menuClose>
+        <ion-icon name="information" item-left></ion-icon>
+        About
+      </ion-item>
+      <ion-item menuClose (click)="openCustomerPage()">
+        <ion-icon name="exit" item-left></ion-icon>
+        Back As Customer
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
