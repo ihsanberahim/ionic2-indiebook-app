@@ -11,7 +11,7 @@ import { PublisherPage } from '../pages/publisher/publisher';
 export class App {
   @ViewChild('approot') navCtrl;
 
-  rootPage = PublisherPage;
+  rootPage = HomePage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
