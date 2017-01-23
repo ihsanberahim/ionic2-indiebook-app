@@ -1,5 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+
 import { Ionic2RatingModule, Ionic2Rating } from 'ionic2-rating';
 
 import { App } from './app.component';
@@ -12,6 +13,7 @@ import { LikesTabPage } from '../pages/likes-tab/likes-tab';
 import { MyBooksTabPage } from '../pages/my-books-tab/my-books-tab';
 import { SearchTabPage } from '../pages/search-tab/search-tab';
 
+import { PublisherPage } from '../pages/publisher/publisher';
 import { BookDetailsPage } from '../pages/book-details/book-details';
 
 @NgModule({
@@ -23,6 +25,7 @@ import { BookDetailsPage } from '../pages/book-details/book-details';
     MyBooksTabPage,
     SearchTabPage,
     BookDetailsPage,
+    PublisherPage,
     BookComponent
   ],
   imports: [
@@ -38,6 +41,7 @@ import { BookDetailsPage } from '../pages/book-details/book-details';
     MyBooksTabPage,
     SearchTabPage,
     BookDetailsPage,
+    PublisherPage,
     BookComponent,
     Ionic2Rating
   ],

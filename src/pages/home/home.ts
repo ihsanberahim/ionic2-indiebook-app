@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController } from 'ionic-angular';
+import { NavController, MenuController } from 'ionic-angular';
 import { HomeTabPage } from '../home-tab/home-tab';
 import { LikesTabPage } from '../likes-tab/likes-tab';
 import { MyBooksTabPage } from '../my-books-tab/my-books-tab';
@@ -17,8 +17,9 @@ export class HomePage {
   mybooksTab = MyBooksTabPage;
   searchTab = SearchTabPage;
 
-  constructor(public navCtrl: NavController) {
-    
+  constructor(public navCtrl: NavController, public menuCtrl: MenuController) {
+    menuCtrl.enable(true, 'menu-customer');
+    menuCtrl.enable(false, 'menu-publisher');
   }
 
 }
