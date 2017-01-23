@@ -15,10 +15,6 @@
         Help Center
       </ion-item>
       <ion-item menuClose>
-        <ion-icon name="lock" item-left></ion-icon>
-        Privacy Shortcuts
-      </ion-item>
-      <ion-item menuClose>
         <ion-icon name="document" item-left></ion-icon>
         Terms & Policies
       </ion-item>
@@ -30,9 +26,19 @@
         <ion-icon name="information" item-left></ion-icon>
         About
       </ion-item>
+      <ion-list-header>Apps
+      </ion-list-header>
       <ion-item menuClose (click)="openPublisherPage()">
-        <ion-icon name="open" item-left></ion-icon>
+        <ion-icon name="briefcase" item-left></ion-icon>
         Open Publisher
+      </ion-item>
+      <ion-item menuClose (click)="openPublisherPage()">
+        <ion-icon name="log-in" item-left></ion-icon>
+        Login
+      </ion-item>
+      <ion-item menuClose (click)="openPublisherPage()">
+        <ion-icon name="log-out" item-left></ion-icon>
+        Logout
       </ion-item>
     </ion-list>
   </ion-content>
@@ -49,11 +55,11 @@
       </ion-item>
       <ion-item menuClose>
         <ion-icon name="stats" item-left></ion-icon>
-        Sales
+        Sales & Analytics
       </ion-item>
       <ion-item menuClose>
         <ion-icon name="cloud" item-left></ion-icon>
-        Uploaded Books
+        Manage Books
       </ion-item>
       <ion-item menuClose>
         <ion-icon name="cloud-upload" item-left></ion-icon>
@@ -66,10 +72,6 @@
         Help Center
       </ion-item>
       <ion-item menuClose>
-        <ion-icon name="lock" item-left></ion-icon>
-        Privacy Shortcuts
-      </ion-item>
-      <ion-item menuClose>
         <ion-icon name="document" item-left></ion-icon>
         Terms & Policies
       </ion-item>
@@ -78,12 +80,22 @@
         Report a problem
       </ion-item>
       <ion-item menuClose>
-        <ion-icon name="information" item-left></ion-icon>
+        <ion-icon name="information-circle" item-left></ion-icon>
         About
       </ion-item>
+      <ion-list-header>Apps
+      </ion-list-header>
       <ion-item menuClose (click)="openCustomerPage()">
-        <ion-icon name="exit" item-left></ion-icon>
+        <ion-icon name="glasses" item-left></ion-icon>
         Back As Customer
+      </ion-item>
+      <ion-item menuClose (click)="openPublisherPage()">
+        <ion-icon name="log-in" item-left></ion-icon>
+        Login
+      </ion-item>
+      <ion-item menuClose (click)="openPublisherPage()">
+        <ion-icon name="log-out" item-left></ion-icon>
+        Logout
       </ion-item>
     </ion-list>
   </ion-content>
