@@ -17,6 +17,8 @@ import { PublisherPage } from '../pages/publisher/publisher';
 import { BookDetailsPage } from '../pages/book-details/book-details';
 import { PublishABookPage } from '../pages/publish-a-book/publish-a-book';
 import { BookPreviewPage } from '../pages/book-preview/book-preview';
+import { ManageBooksPage } from '../pages/manage-books/manage-books';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { BookPreviewPage } from '../pages/book-preview/book-preview';
     PublisherPage,
     PublishABookPage,
     BookPreviewPage,
+    ManageBooksPage,
     BookComponent
   ],
   imports: [
@@ -48,6 +51,7 @@ import { BookPreviewPage } from '../pages/book-preview/book-preview';
     PublisherPage,
     PublishABookPage,
     BookPreviewPage,
+    ManageBooksPage,
     BookComponent,
     Ionic2Rating
   ],
