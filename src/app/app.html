@@ -10,20 +10,20 @@
       </ion-item>
       <ion-list-header>Help & Settings
       </ion-list-header>
-      <ion-item menuClose>
+      <ion-item menuClose (click)="openHelpCenter()">
         <ion-icon name="help" item-left></ion-icon>
         Help Center
       </ion-item>
-      <ion-item menuClose>
+      <ion-item menuClose (click)="openTnc()">
         <ion-icon name="document" item-left></ion-icon>
         Terms & Policies
       </ion-item>
-      <ion-item menuClose>
+      <ion-item menuClose (click)="openReportAProblem()">
         <ion-icon name="bug" item-left></ion-icon>
         Report a problem
       </ion-item>
-      <ion-item menuClose>
-        <ion-icon name="information" item-left></ion-icon>
+      <ion-item menuClose (click)="openAbout()">
+        <ion-icon name="information-circle" item-left></ion-icon>
         About
       </ion-item>
       <ion-list-header>Apps
@@ -32,11 +32,11 @@
         <ion-icon name="briefcase" item-left></ion-icon>
         Open Publisher
       </ion-item>
-      <ion-item menuClose (click)="openPublisherPage()">
+      <ion-item menuClose (click)="openLogin()">
         <ion-icon name="log-in" item-left></ion-icon>
         Login
       </ion-item>
-      <ion-item menuClose (click)="openPublisherPage()">
+      <ion-item menuClose (click)="openCustomerPage()">
         <ion-icon name="log-out" item-left></ion-icon>
         Logout
       </ion-item>
@@ -67,19 +67,19 @@
       </ion-item>
       <ion-list-header>Help & Settings
       </ion-list-header>
-      <ion-item menuClose>
+      <ion-item menuClose (click)="openHelpCenter()">
         <ion-icon name="help" item-left></ion-icon>
         Help Center
       </ion-item>
-      <ion-item menuClose>
+      <ion-item menuClose (click)="openTnc()">
         <ion-icon name="document" item-left></ion-icon>
         Terms & Policies
       </ion-item>
-      <ion-item menuClose>
+      <ion-item menuClose (click)="openReportAProblem()">
         <ion-icon name="bug" item-left></ion-icon>
         Report a problem
       </ion-item>
-      <ion-item menuClose>
+      <ion-item menuClose (click)="openAbout()">
         <ion-icon name="information-circle" item-left></ion-icon>
         About
       </ion-item>
@@ -89,11 +89,11 @@
         <ion-icon name="glasses" item-left></ion-icon>
         Back As Customer
       </ion-item>
-      <ion-item menuClose (click)="openPublisherPage()">
+      <ion-item menuClose (click)="openLogin()">
         <ion-icon name="log-in" item-left></ion-icon>
         Login
       </ion-item>
-      <ion-item menuClose (click)="openPublisherPage()">
+      <ion-item menuClose (click)="openCustomerPage()">
         <ion-icon name="log-out" item-left></ion-icon>
         Logout
       </ion-item>
