@@ -16,6 +16,7 @@ import { SearchTabPage } from '../pages/search-tab/search-tab';
 import { PublisherPage } from '../pages/publisher/publisher';
 import { BookDetailsPage } from '../pages/book-details/book-details';
 import { PublishABookPage } from '../pages/publish-a-book/publish-a-book';
+import { BookPreviewPage } from '../pages/book-preview/book-preview';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { PublishABookPage } from '../pages/publish-a-book/publish-a-book';
     BookDetailsPage,
     PublisherPage,
     PublishABookPage,
+    BookPreviewPage,
     BookComponent
   ],
   imports: [
@@ -45,6 +47,7 @@ import { PublishABookPage } from '../pages/publish-a-book/publish-a-book';
     BookDetailsPage,
     PublisherPage,
     PublishABookPage,
+    BookPreviewPage,
     BookComponent,
     Ionic2Rating
   ],

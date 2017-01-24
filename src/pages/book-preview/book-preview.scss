@@ -1,0 +1,10 @@
+page-book-preview {
+    page-book-details{
+        ion-header{
+            display: none;
+        }
+        .scroll-content{
+            overflow-y: hidden;
+        }
+    }
+}
