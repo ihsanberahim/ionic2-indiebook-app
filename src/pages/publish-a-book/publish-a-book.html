@@ -7,6 +7,38 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" floating>Title</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
 
+    <ion-item class="selling-price">
+      <ion-label color="primary" fixed>Selling Price (RM)</ion-label>
+      <ion-input type="number" placeholder="00.00"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Synopsis</ion-label>
+      <ion-textarea placeholder="Write the synopsis..."></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col>
+          <button ion-button>Upload Cover</button>
+        </ion-col>
+        <ion-col>
+          <button ion-button>Upload Book (PDF)</button>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col>
+          <button ion-button block>Publish Now</button>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-list>
 </ion-content>

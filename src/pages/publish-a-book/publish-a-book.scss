@@ -1,3 +1,11 @@
-page-publish-a-book {
+$selling-price-label-width: 50% !default;
 
+page-publish-a-book {
+    .selling-price{
+        ion-label{
+            width: $selling-price-label-width;
+            min-width: $selling-price-label-width;
+            max-width: $selling-price-label-width;
+        }
+    }
 }
