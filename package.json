@@ -37,7 +37,10 @@
     "cordova-plugin-console",
     "cordova-plugin-device",
     "cordova-plugin-splashscreen",
-    "ionic-plugin-keyboard"
+    "ionic-plugin-keyboard",
+    "cordova-plugin-document-viewer",
+    "cordova-plugin-file",
+    "cordova-plugin-compat"
   ],
   "cordovaPlatforms": [
     "ios",
