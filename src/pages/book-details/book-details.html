@@ -1,7 +1,7 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Book Details</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Book Title</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -9,8 +9,8 @@
 
 <ion-content>
   <ion-row class="basic-info">
-    <ion-col width-33>
-      <img src="assets/image/splash.png" alt="" class="book-cover">
+    <ion-col width-33 center>
+      <img src="assets/image/book-cover-1.jpg" alt="" class="book-cover">
     </ion-col>
     <ion-col width-67>
       <ion-row>
@@ -50,7 +50,27 @@
     </ion-col>
   </ion-row>
   <ion-row class="synopsis">
+    <ion-col>
     <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.
     </p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="about-author">
+    <ion-col>
+      <p>
+        <strong>About The Author
+        </strong>
+        <br/>
+        <br/>
+        Author Name started write books since 2007 until now he already published 20 books.
+      </p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="reader-rating">
+    <ion-col>
+      <img src="assets/image/reader-avatar.png">
+      <p>Rate this book</p>
+      <rating [(ngModel)]="rate"></rating>
+    </ion-col>
   </ion-row>
 </ion-content>
