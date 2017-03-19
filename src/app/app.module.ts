@@ -24,6 +24,11 @@ import { ReportAProblemPage } from '../pages/report-a-problem/report-a-problem';
 import { TermsPoliciesPage } from '../pages/terms-policies/terms-policies';
 import { AboutPage } from '../pages/about/about';
 
+import { ReadingPage } from '../pages/reading/reading';
+import { ReadingToolsComponent } from '../components/reading-tools/reading-tools';
+
+import { BookPageService } from '../pages/reading/book-page';
+import { BookOutlineService } from '../pages/reading/book-outline';
 
 @NgModule({
   declarations: [
@@ -43,7 +48,9 @@ import { AboutPage } from '../pages/about/about';
     ReportAProblemPage,
     TermsPoliciesPage,
     AboutPage,
-    BookComponent
+    ReadingPage,
+    BookComponent,
+    ReadingToolsComponent,
   ],
   imports: [
     IonicModule.forRoot(App),
@@ -67,9 +74,16 @@ import { AboutPage } from '../pages/about/about';
     ReportAProblemPage,
     TermsPoliciesPage,
     AboutPage,
+    ReadingPage,
     BookComponent,
+    ReadingToolsComponent,
     Ionic2Rating
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+   App,
+   BookPageService,
+   BookOutlineService,
+   {provide: ErrorHandler, useClass: IonicErrorHandler}
+  ]
 })
 export class AppModule {}

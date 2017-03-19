@@ -1,5 +1,7 @@
 <ion-menu [content]="approot" id="menu-customer">
   <ion-content>
+    <div id="background-customer">
+    </div>
     <ion-list>
       <ion-item class="publisher-avatar">
         <ion-avatar item-right>
@@ -7,6 +9,7 @@
         </ion-avatar>
         <h2>Cher</h2>
         <p>Ugh. As if.</p>
+        <div class="item-shadow"></div>
       </ion-item>
       <ion-list-header>Help & Settings
       </ion-list-header>
@@ -49,13 +52,16 @@
 </ion-menu>
 <ion-menu [content]="approot" id="menu-publisher">
   <ion-content>
+    <div id="background-publisher">
+    </div>
     <ion-list>
       <ion-item class="publisher-avatar">
         <ion-avatar item-right>
-          <img src="assets/image/ionic.png">
+          <img src="assets/image/reader-avatar.png">
         </ion-avatar>
         <h2>Cher</h2>
         <p>Ugh. As if.</p>
+        <div class="item-shadow"></div>
       </ion-item>
       <ion-item menuClose>
         <ion-icon name="stats" item-left></ion-icon>
@@ -106,6 +112,16 @@
         Logout
       </ion-item>
     </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-menu [content]="approot" id="outline-book" side="right" type="overlay" swipeEnabled="false" persistent>
+  <ion-content>
+   <ion-list>
+    <ion-list-header>Outline
+    </ion-list-header>
+    <ion-item *ngFor="let item of bookOutlineItems" menuClose (click)="jumpReadingToPage(item.page)">{{item.title}}
+    </ion-item>
+   </ion-list>
   </ion-content>
 </ion-menu>
 

@@ -10,8 +10,13 @@ import { PublishABookPage } from '../publish-a-book/publish-a-book';
 export class PublisherPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public menuCtrl: MenuController) {
-    menuCtrl.enable(false, 'menu-customer');
-    menuCtrl.enable(true, 'menu-publisher');
+
+  }
+
+  ionViewDidEnter() {
+   this.menuCtrl.enable(false, 'menu-customer');
+   this.menuCtrl.enable(true, 'menu-publisher');
+   this.menuCtrl.enable(false, 'outline-book');
   }
 
   ionViewDidLoad() {

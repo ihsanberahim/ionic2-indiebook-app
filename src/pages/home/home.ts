@@ -18,8 +18,12 @@ export class HomePage {
   searchTab = SearchTabPage;
 
   constructor(public navCtrl: NavController, public menuCtrl: MenuController) {
-    menuCtrl.enable(true, 'menu-customer');
-    menuCtrl.enable(false, 'menu-publisher');
+
   }
 
+  ionViewDidEnter() {
+   this.menuCtrl.enable(true, 'menu-customer');
+   this.menuCtrl.enable(false, 'menu-publisher');
+   this.menuCtrl.enable(false, 'outline-book');
+  }
 }

@@ -12,6 +12,10 @@ import { ReportAProblemPage } from '../pages/report-a-problem/report-a-problem';
 import { TermsPoliciesPage } from '../pages/terms-policies/terms-policies';
 import { AboutPage } from '../pages/about/about';
 
+import { ReadingPage } from '../pages/reading/reading';
+
+declare var Trianglify:any;
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -20,14 +24,38 @@ export class App {
 
   rootPage = HomePage;
 
+  readingScreen: ReadingPage;
+  bookOutlineItems: any = [];
+
   constructor(platform: Platform) {
     platform.ready().then(() => {
       StatusBar.styleDefault();
       Splashscreen.hide();
+
+      var pattern = Trianglify({
+        height: 160,
+        width: 265,
+        cell_size: 160
+      });
+
+      document.getElementById('background-customer').appendChild(pattern.svg());
+      document.getElementById('background-publisher').appendChild(pattern.svg());
     });
   }
 
-  openCustomerPage(){
+  setReadingScreen(screen: ReadingPage) {
+   this.readingScreen = screen;
+  }
+  updateBookOutline(_bookOutlineItems: any) {
+   this.bookOutlineItems = _bookOutlineItems;
+  }
+  jumpReadingToPage(pageNumber: number) {
+   console.log('jumpReadingToPage...');
+
+   this.readingScreen.jumpToPage(pageNumber);
+  }
+
+  openCustomerPage() {
     this.navCtrl.setRoot(HomePage);
   }
   openPublisherPage(){
