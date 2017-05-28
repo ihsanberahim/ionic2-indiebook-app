@@ -34,7 +34,7 @@ export class App {
 
       var pattern = Trianglify({
         height: 160,
-        width: 265,
+        width: 300,
         cell_size: 160
       });
 
