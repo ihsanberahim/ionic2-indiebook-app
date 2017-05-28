@@ -1,4 +1,5 @@
 import { NgModule, ErrorHandler } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 
 import { Ionic2RatingModule, Ionic2Rating } from 'ionic2-rating';
@@ -54,7 +55,8 @@ import { BookOutlineService } from '../pages/reading/book-outline';
   ],
   imports: [
     IonicModule.forRoot(App),
-    Ionic2RatingModule
+    Ionic2RatingModule,
+    BrowserModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
