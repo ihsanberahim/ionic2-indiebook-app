@@ -1,8 +1,12 @@
-import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { ErrorHandler, NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
-import { Ionic2RatingModule, Ionic2Rating } from 'ionic2-rating';
+import { SplashScreen } from '@ionic-native/splash-screen';
+import { StatusBar } from '@ionic-native/status-bar';
+
+import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { Ionic2RatingModule } from 'ionic2-rating';
 
 import { App } from './app.component';
 
@@ -34,13 +38,15 @@ import { BookOutlineService } from '../pages/reading/book-outline';
 @NgModule({
   declarations: [
     App,
+    BookComponent,
+    ReadingToolsComponent,
     HomePage,
     HomeTabPage,
     LikesTabPage,
     MyBooksTabPage,
     SearchTabPage,
-    BookDetailsPage,
     PublisherPage,
+    BookDetailsPage,
     PublishABookPage,
     BookPreviewPage,
     ManageBooksPage,
@@ -50,13 +56,12 @@ import { BookOutlineService } from '../pages/reading/book-outline';
     TermsPoliciesPage,
     AboutPage,
     ReadingPage,
-    BookComponent,
-    ReadingToolsComponent,
   ],
   imports: [
+    BrowserModule,
+    HttpModule,
     IonicModule.forRoot(App),
     Ionic2RatingModule,
-    BrowserModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -66,8 +71,8 @@ import { BookOutlineService } from '../pages/reading/book-outline';
     LikesTabPage,
     MyBooksTabPage,
     SearchTabPage,
-    BookDetailsPage,
     PublisherPage,
+    BookDetailsPage,
     PublishABookPage,
     BookPreviewPage,
     ManageBooksPage,
@@ -79,13 +84,13 @@ import { BookOutlineService } from '../pages/reading/book-outline';
     ReadingPage,
     BookComponent,
     ReadingToolsComponent,
-    Ionic2Rating
   ],
   providers: [
-   App,
+   StatusBar,
+   SplashScreen,
+   {provide: ErrorHandler, useClass: IonicErrorHandler},
    BookPageService,
    BookOutlineService,
-   {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}

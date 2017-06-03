@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { Platform } from 'ionic-angular';
-import { StatusBar, Splashscreen } from 'ionic-native';
+import { SplashScreen } from '@ionic-native/splash-screen';
+import { StatusBar } from '@ionic-native/status-bar';
 
 import { HomePage } from '../pages/home/home';
 import { PublisherPage } from '../pages/publisher/publisher';
@@ -27,10 +28,10 @@ export class App {
   readingScreen: ReadingPage;
   bookOutlineItems: any = [];
 
-  constructor(platform: Platform) {
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
-      StatusBar.styleDefault();
-      Splashscreen.hide();
+      statusBar.styleDefault();
+      splashScreen.hide();
 
       var pattern = Trianglify({
         height: 160,
