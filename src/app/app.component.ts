@@ -12,6 +12,7 @@ import { HelpCenterPage } from '../pages/help-center/help-center';
 import { ReportAProblemPage } from '../pages/report-a-problem/report-a-problem';
 import { TermsPoliciesPage } from '../pages/terms-policies/terms-policies';
 import { AboutPage } from '../pages/about/about';
+// import { PageEditorPage } from '../pages/page-editor/page-editor';
 
 import { ReadingPage } from '../pages/reading/reading';
 

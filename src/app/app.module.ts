@@ -28,6 +28,7 @@ import { HelpCenterPage } from '../pages/help-center/help-center';
 import { ReportAProblemPage } from '../pages/report-a-problem/report-a-problem';
 import { TermsPoliciesPage } from '../pages/terms-policies/terms-policies';
 import { AboutPage } from '../pages/about/about';
+import { PageEditorPageModule } from '../pages/page-editor/page-editor.module';
 
 import { ReadingPage } from '../pages/reading/reading';
 import { ReadingToolsComponent } from '../components/reading-tools/reading-tools';
@@ -62,6 +63,7 @@ import { BookOutlineService } from '../pages/reading/book-outline';
     HttpModule,
     IonicModule.forRoot(App),
     Ionic2RatingModule,
+    PageEditorPageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [

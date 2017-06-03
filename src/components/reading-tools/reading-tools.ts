@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { NavController } from 'ionic-angular';
+import { PageEditorPage } from '../../pages/page-editor/page-editor';
 /*
   Generated class for the ReadingTools component.
 
@@ -48,11 +49,16 @@ export class ReadingToolsComponent {
   }
  ];
 
- constructor() {
+ constructor(public navCtrl: NavController) {
  }
 
  ngOnInit() {
   this.background = 'white';
+ }
+
+ editPage()
+ {
+  this.navCtrl.push(PageEditorPage);
  }
 
  changeFontFamily() {
